@@ -14,8 +14,8 @@ module.exports = async (req, res) => {
             
             res.status(200).json({
                 quote: random.line,
-                writer: "Romeo",
-                apiOwner: "InspiroBot"
+                writer: "Oye_Buggu",
+                TG: "https://t.me/Tera_Paglu"
             });
         } else {
             // Normal English Quotes
@@ -23,10 +23,10 @@ module.exports = async (req, res) => {
             res.status(200).json({
                 quote: response.data[0].q,
                 writer: response.data[0].a,
-                apiOwner: "InspiroBot"
+                TG: "https://t.me/Tera_Paglu"
             });
         }
     } catch (e) {
-        res.status(500).json({ error: "API connect nahi ho pa rahi hai" });
+        res.status(500).json({ error: "Madarchod Api Churana Chahta Hai" });
     }
 };
