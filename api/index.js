@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
     try {
         if (query === 'random-Flirt') {
             // Hinglish Flirting Lines ke liye source
-            const response = await axios.get('https://raw.githubusercontent.com/Social-Siddharth/Hinglish-Flirt-API/main/flirt.json');
+            const response = await axios.get('https://api.popcat.xyz/pickuplines');
             const data = response.data;
             const random = data[Math.floor(Math.random() * data.length)];
             
