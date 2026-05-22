@@ -12,13 +12,13 @@ module.exports = async (req, res) => {
         if (!url.includes('?')) {
             return res.status(200).json({
                 status: "Success",
-                message: "Welcome to InspiroBot API",
+                message: "Welcome to Divyansh Deewana api",
                 how_to_use: {
                     quotes: "Add '?random' to get English quotes",
                     flirting: "Add '?random-Flirt' to get Flirting lines"
                 },
                 example: "https://random-qutoes-and-flirting-lines.vercel.app/?random-Flirt",
-                apiOwner: "InspiroBot"
+                TG: "t.me/tera_paglu"
             });
         }
 
@@ -28,8 +28,8 @@ module.exports = async (req, res) => {
             
             return res.status(200).json({
                 quote: response.data.pickupline, // PopCat se line uthayi
-                writer: "Romeo",
-                apiOwner: "InspiroBot"
+                writer: "Oye_Buggu",
+                TG: "t.me/tera_paglu"
             });
         } 
 
@@ -40,7 +40,7 @@ module.exports = async (req, res) => {
             return res.status(200).json({
                 quote: response.data[0].q,
                 writer: response.data[0].a,
-                apiOwner: "InspiroBot"
+                TG: "t.me/tera_paglu"
             });
         }
 
